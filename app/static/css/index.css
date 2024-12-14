@@ -1,0 +1,136 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Un gris muy claro */
+    color: #333; /* Texto oscuro pero no negro puro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #a3d9c6; /* Verde pastel */
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 1.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #2d5d53; /* Verde oscuro complementario */
+}
+
+main {
+    width: 80%;
+    background-color: #fefefe; /* Blanco no tan brillante */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    margin-top: 2rem;
+}
+
+/* Estilo para formularios */
+form {
+    margin-bottom: 2em;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e7f5fe; /* Azul pastel claro */
+    box-sizing: border-box;
+}
+
+.formActions {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background-color: #f9c5d5;
+    color: #5b2a34;
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffef9f !important;
+}
+
+.infoRow {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilo para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th,td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #b5d3e7;
+    color: #2d4d5a;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1faff;
+}
+
+.thActions {
+    width: 300px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
